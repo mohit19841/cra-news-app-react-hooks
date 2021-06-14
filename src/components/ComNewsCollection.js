@@ -7,11 +7,11 @@ import NewsItem from './NewsItem.js';
 const ComNewsCollection = () => {
   let [news, setNews] = useState([]);
   const { handle } = useParams();
-  const fetchNews = async () => {
+  const fetchNews = () => {
     const api_key = 'b6dc55bdc09e4b2bb1d611c88d06df94';
     const api_endpoint = `https://newsapi.org/v2/everything?q=${handle}&sortBy=publishedAt&language=en&apiKey=${api_key}`;
 
-    await axios
+    axios
       .get(api_endpoint)
       .then(function (response) {
         const data = response.data;
