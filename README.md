@@ -1,4 +1,4 @@
-# This is react hooks application to view latest UK news with helpof news-api.
+# This is react hooks application to view latest UK news with help of news-api.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
